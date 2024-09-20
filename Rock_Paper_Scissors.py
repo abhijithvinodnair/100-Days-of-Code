@@ -30,7 +30,7 @@ scissors = '''
 Game = [rock, paper, scissors]
 while True:
     print ("Welcome to Rock Paper Scissors!")
-    your_choice = int(input("What do you choose? Type 0 for Rock, 1 for Paper, or 2 for Scissors."))
+    your_choice = int(input("What do you choose? Type 0 for Rock, 1 for Paper, or 2 for Scissors.\n"))
     if your_choice < 0 or your_choice > 2:
         print("Invalid choice! Try again.")
         exit
