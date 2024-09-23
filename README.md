@@ -5,4 +5,4 @@ Python Beginner to Professional Projects
 3. [Treasure Island Project](https://github.com/abhijithvinodnair/100-Days-of-Code/blob/main/Treasure_Island.py)
 4. [Rock Paper Scissors](https://github.com/abhijithvinodnair/100-Days-of-Code/blob/main/Rock_Paper_Scissors.py)
 5. [Password_Generator](https://github.com/abhijithvinodnair/100-Days-of-Code/blob/main/Password_Generator.py)
-6. [Escaping the Maze](url)
+6. [Escaping the Maze](https://github.com/abhijithvinodnair/100-Days-of-Code/blob/main/Escape_the_Maze.md)
