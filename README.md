@@ -8,4 +8,5 @@ Python Beginner to Professional Projects
 6. [Escaping the Maze](https://github.com/abhijithvinodnair/100-Days-of-Code/blob/main/Escape_the_Maze.md)
 7. [Hang man](https://github.com/abhijithvinodnair/100-Days-of-Code/blob/main/Hangman.py)
 8. [Ceasar Cipher](https://github.com/abhijithvinodnair/100-Days-of-Code/blob/main/Ceasar_Cypher.py)
+9. [Blind Auction](https://github.com/abhijithvinodnair/100-Days-of-Code/tree/main)
  
