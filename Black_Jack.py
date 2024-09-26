@@ -67,6 +67,7 @@ def blackjack (game):
                 print(f"Your final hand: {you}, final score: {sum1}")
                 print(f"Computer's final hand:{dealer}, final score: {sum2}")
                 print("You went over. You lose 😭")
+                return
             elif sum1 == 21:
                 print(f"Your final hand: {you}, final score: {sum1}")
                 print(f"Computer's final hand:{dealer}, final score: {sum2}")
