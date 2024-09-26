@@ -10,4 +10,5 @@ Python Beginner to Professional Projects
 8. [Ceasar Cipher](https://github.com/abhijithvinodnair/100-Days-of-Code/blob/main/Ceasar_Cypher.py)
 9. [Blind Auction](https://github.com/abhijithvinodnair/100-Days-of-Code/blob/main/Blind_Auction.py)
 10. [Calculator](https://github.com/abhijithvinodnair/100-Days-of-Code/blob/main/Calculator.py)
+11. [Black Jack](https://github.com/abhijithvinodnair/100-Days-of-Code/blob/main/Black_Jack.py)
  
