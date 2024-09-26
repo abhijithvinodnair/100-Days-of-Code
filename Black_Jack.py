@@ -36,14 +36,27 @@ def blackjack (game):
             sum2 += int(dealer[-1])
             print(f"Your cards: {you}, current score = {sum1}")
             print(f"Computer's first card: {dealer[0]}")
+            if 11 in dealer and sum(dealer) > 21:
+                dealer [dealer.index(11)] = 1
+                sum2 -= 10
+            if 11 in you and sum(you) > 21:
+                you[you.index(11)] = 1
+                sum1 -= 10
             if sum1 >= 21 or sum2 >= 21:
                 break
             play = input("Type 'y' to get another card, type 'n' to pass: ").lower()
             if play == 'n':
                 break
+
         while sum2 < 17:
             dealer.append(random.choice(cards))
             sum2 += int(dealer[-1])
+        if 11 in dealer and sum(dealer) > 21:
+            dealer[dealer.index(11)] = 1
+            sum2 -= 10
+        if 11 in you and sum(you) > 21:
+            you[you.index(11)] = 1
+            sum1 -= 10
         if sum1 > sum2:
             if sum1 > 21 and sum2 == 21:
                 print(f"Your final hand: {you}, final score: {sum1}")
@@ -90,7 +103,52 @@ def blackjack (game):
             print(f"Computer's final hand:{dealer}, final score: {sum2}")
             print("Draw 🙃")
             return
-          
+
+        # if sum1 > sum2:
+        #     if sum1 > 21 and sum2 == 21:
+        #         print(f"Your final hand: {you}, final score: {sum1}")
+        #         print(f"Computer's final hand:{dealer}, final score: {sum2}")
+        #         print("You went over. Opponent wins with a blackjack 😭")
+        #         return
+        #     elif sum1 > 21 and sum2 < 21:
+        #         print(f"Your final hand: {you}, final score: {sum1}")
+        #         print(f"Computer's final hand:{dealer}, final score: {sum2}")
+        #         print("You went over. You lose 😭")
+        #         return
+        #     elif sum1 == 21:
+        #         print(f"Your final hand: {you}, final score: {sum1}")
+        #         print(f"Computer's final hand:{dealer}, final score: {sum2}")
+        #         print("Win with a Blackjack 😱")
+        #         return
+        #     else:
+        #         print(f"Your final hand: {you}, final score: {sum1}")
+        #         print(f"Computer's final hand:{dealer}, final score: {sum2}")
+        #         print("You win 😎")
+        #         return
+        # elif sum2 > sum1:
+        #     if sum2 > 21 and sum1 < 21:
+        #         print(f"Your final hand: {you}, final score: {sum1}")
+        #         print(f"Computer's final hand:{dealer}, final score: {sum2}")
+        #         print("Dealer went over. You win😎")
+        #         return
+        #     elif sum2 > 21 and sum1 == 21:
+        #         print(f"Your final hand: {you}, final score: {sum1}")
+        #         print(f"Computer's final hand:{dealer}, final score: {sum2}")
+        #         print("Dealer went over. Win with a Blackjack 😎")
+        #     elif sum2 == 21:
+        #         print(f"Your final hand: {you}, final score: {sum1}")
+        #         print(f"Computer's final hand:{dealer}, final score: {sum2}")
+        #         print("Lose, opponent has Blackjack 😱")
+        #         return
+        #     else:
+        #         print(f"Your final hand: {you}, final score: {sum1}")
+        #         print(f"Computer's final hand:{dealer}, final score: {sum2}")
+        #         print("You lose 😭")
+        #         return
+        # elif sum1 == sum2:
+        #     print("Draw 🙃")
+        #     return
+
 while decision == 'y':
 
     decision = input("Do you want to play a game of Blackjack? Type 'y' or 'n': ").lower()
