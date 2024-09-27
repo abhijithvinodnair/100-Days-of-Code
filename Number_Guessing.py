@@ -1,4 +1,10 @@
 import random
+logo = """
+  / _ \_   _  ___  ___ ___  /__   \ |__   ___    /\ \ \_   _ _ __ ___ | |__   ___ _ __ 
+ / /_\/ | | |/ _ \/ __/ __|   / /\/ '_ \ / _ \  /  \/ / | | | '_ ` _ \| '_ \ / _ \ '__|
+/ /_\\| |_| |  __/\__ \__ \  / /  | | | |  __/ / /\  /| |_| | | | | | | |_) |  __/ |   
+\____/ \__,_|\___||___/___/  \/   |_| |_|\___| \_\ \/  \__,_|_| |_| |_|_.__/ \___|_| 
+"""
 def guessgame(guess,number):
     if guess > number:
         if guess - number < 10:
@@ -17,6 +23,7 @@ def guessgame(guess,number):
     elif guess == number:
         print(f"You got it! You guessed the right number: {number}!")
         return
+print(logo)
 print("Welcome to the Number Guessing Game!")
 print("I'm thinking of a number between 1 and 100")
 number = random.randint(1,100)
