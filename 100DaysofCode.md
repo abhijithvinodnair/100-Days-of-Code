@@ -20,3 +20,5 @@ Python Beginner to Professional Projects
 18. [Hirst dot painting](https://github.com/abhijithvinodnair/100-Days-of-Code/blob/main/Turtle/Hirst_Painting.py)
 19. [Etch a Sketch](https://github.com/abhijithvinodnair/100-Days-of-Code/blob/main/Turtle/Etch_A_Sketch.py)
 20. [Turtle Race](https://github.com/abhijithvinodnair/100-Days-of-Code/blob/main/Turtle/Turtle_Race.py)
+21. [Snake Game](https://github.com/abhijithvinodnair/100-Days-of-Code/blob/main/Turtle/Snake%20Game/Snake_Game.py)
+22. [Pong Game](https://github.com/abhijithvinodnair/100-Days-of-Code/blob/main/Pong%20Game/Pong_Game.py)
