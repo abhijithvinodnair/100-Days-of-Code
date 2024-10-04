@@ -25,6 +25,15 @@ class Snake:
         snake.color(random.choice(COLORS))
         snake.goto(position)
         self.snakes.append(snake)
+    def reset(self):
+        for segment in self.snakes:
+            segment.goto(2000,2000)
+        self.snakes.clear()
+        self.create_snake()
+        self.head = self.snakes[0]
+        self.head.shape("turtle")
+        self.head.color("Red3")
+
     def extend(self):
         self.add_snake_body(self.snakes[-1].position())
 
