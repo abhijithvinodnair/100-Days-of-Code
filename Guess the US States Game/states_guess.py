@@ -14,15 +14,13 @@ answer_y = 0
 import pandas
 data = pandas.read_csv("50_states.csv")
 all_states = data.state.to_list()
-not_guessed_states = all_states
 guessed_states = []
 while game_is_on:
     while len(guessed_states) < 50:
         answer_state = screen.textinput(title=f"({correct_guesses}/50 found)", prompt="Enter the name of a U.S. state")
         answer_state_title = str(answer_state).title()
         if answer_state_title == "Exit":
-            for states in guessed_states:
-                not_guessed_states.remove(states)
+            not_guessed_states = [n for n in all_states if n not in guessed_states]
             new_data = pandas.DataFrame(not_guessed_states)
             new_data.to_csv("states_to_learn.csv")
 
