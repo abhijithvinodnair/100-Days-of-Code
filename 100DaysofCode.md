@@ -25,3 +25,4 @@ Python Beginner to Professional Projects
 23. [Pong Game](https://github.com/abhijithvinodnair/100-Days-of-Code/blob/main/Pong%20Game/Pong_Game.py)
 24. [Mail Invitation via File](https://github.com/abhijithvinodnair/100-Days-of-Code/blob/main/Invitation/Letter.py)
 25. [Guess the US States](https://github.com/abhijithvinodnair/100-Days-of-Code/blob/main/Guess%20the%20US%20States%20Game/states_guess.py)
+26. [Nato Alphabet](https://github.com/abhijithvinodnair/100-Days-of-Code/blob/main/Nato%20Alphabet/nato.py)
